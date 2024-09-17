@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Word Counter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h1>Word counter</h1>
-    <textarea name="" id="" cols="30" rows="10"> </textarea>
-    <p>Total words:<span class="wordcount">0</span></p>
+<body class="p-6 flex flex-col items-center text-center bg-sky-100">
+    <h1 class="font-bold text-2xl">Word counter Application</h1>
+    <textarea onkeyup="keyHasBeenPressed()" class="border border-black rounded-lg mt-4 mb-4 p-2 w-9/12 outline-none"  id="" cols="30" rows="10"> </textarea>
+    <p>Total words: <span class="wordcount">0</span></p>
     <p>Total characters: <span class="charCount">0</span></p>
-    <p>Total characters Allowed:200 || Total character left:0</p>
-    <button>clear</button>
+    <p>Total characters Allowed:200 || Total character left: <span class="charLimitspan">200</span></p>
+    <button class="border border-black py-1 my-3 w-24 clearButton">clear</button>
+    <script src="./index.js"></script>
 </body>
 </html>
